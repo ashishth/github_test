@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+
+@keyframes shake {
+	0%		{transform: translate(0,0)}
+	6%		{transform: translate(-4%, 1%) skewY(-7deg);}
+	10%		{transform: translate(4%, 2%) skewY(4deg);}
+ 	15%		{transform: translate(-2%, -2%) skewY(-1deg);}
+ 	20%		{transform: translate(3%, .4%) skewY(2deg);}
+ 	25%		{transform: translate(-2%, .3%) skewY(-3deg);}
+ 	30%		{transform: translate(1%, -1%) skewY(1deg);}
+	35%		{transform: translate(-1%, -.4%) skewY(-.5deg);}
+	100%	{transform: translate(0, 0);}
+}
+
+.shake {
+	animation: shake 1s ease-out;
+}
+
+body {
+	overflow: hidden;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+h1 {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 1;
+	color: #d7c822;
+	font-family: Courier;
+	font-size: 45px;
+	-webkit-transform: rotate(-30deg);
+	text-align: center;
+}
+
+h2 {
+	top: -50px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #d88d10;
+	font-size: 75px;
+	font-family: 'Hanalei Fill', cursive;
+}
+
+infoScreen {
+	position: relative;
+	z-index: 2;
+	font-size: 0px;
+	color: #2e00af;
+}
